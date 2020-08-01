@@ -21,19 +21,19 @@ public class NovaEmpresaServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 	System.out.println("caiu aqui");
 		String nomeParam= req.getParameter("nome");
-		String dataParam=req.getParameter("data");
+	//	String dataParam=req.getParameter("data");
 		
-		Date data=null;
-		try {
-			SimpleDateFormat sdf= new SimpleDateFormat("dd/MM/yyyy");
-			data= sdf.parse(dataParam);
-		} catch (ParseException e) {
-			throw new ServletException(e); 
-		}
+//		Date data=null;
+//		try {
+//			SimpleDateFormat sdf= new SimpleDateFormat("dd/MM/yyyy");
+//			data= sdf.parse(dataParam);
+	//	} catch (ParseException e) {
+		//	throw new ServletException(e); 
+	//	}
 		
 		Empresa empresa = new Empresa();
 		empresa.setNome(nomeParam);
-		empresa.setData(data);
+//		empresa.setData(data);
 		Banco banco = new Banco();
 		banco.adiciona(empresa);
 		

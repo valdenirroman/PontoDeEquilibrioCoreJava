@@ -7,7 +7,7 @@ import br.com.roman.model.Empresa;
 
 public class Banco {
 
-	private static List<Empresa> empresas = new ArrayList<Empresa>();
+	private static List<Empresa> empresas = new ArrayList();
 	private static Integer chaveSequencial=1;
 	
 	static {
