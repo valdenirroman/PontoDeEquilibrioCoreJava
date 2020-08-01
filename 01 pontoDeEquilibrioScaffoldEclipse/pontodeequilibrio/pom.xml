@@ -9,8 +9,7 @@
   <url>http://maven.apache.org</url>
   <properties>
   		<java.version>11</java.version>
-  		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  		
   </properties>
   <dependencies>
     <dependency>
@@ -19,17 +18,14 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-   <dependency>
-    <groupId>javax.servlet</groupId>
+   
+<!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl -->
+<dependency>
+    <groupId>javax.servlet.jsp.jstl</groupId>
     <artifactId>jstl</artifactId>
     <version>1.2</version>
 </dependency>
-<dependency>
-    <groupId>javax.servlet.jsp.jstl</groupId>
-    <artifactId>jstl-api</artifactId>
-    <version>1.2</version>
-</dependency>
-    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+
 <dependency>
     <groupId>javax.servlet</groupId>
     <artifactId>javax.servlet-api</artifactId>
@@ -38,7 +34,7 @@
 </dependency>
     
   </dependencies>
-  <build>
+    <build>
     <finalName>pontodeequilibrio</finalName>
   </build>
 </project>
