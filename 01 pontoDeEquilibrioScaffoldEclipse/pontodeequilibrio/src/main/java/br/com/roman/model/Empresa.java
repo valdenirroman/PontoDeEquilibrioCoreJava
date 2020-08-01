@@ -4,8 +4,9 @@ import java.util.Date;
 
 public class Empresa {
 	
-	private Integer id;
 	private String nome;
+	private Integer id;
+
 	private Date data = new Date();
 	
 	public Integer getId() {

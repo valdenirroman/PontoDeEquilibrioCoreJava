@@ -20,9 +20,10 @@ public class ListaEmpresasServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 	
 		Banco banco = new Banco();
-		List<Empresa> empresas= banco.getEmpresas();
+		List<Empresa> lista= banco.getEmpresas();
 		
-		req.setAttribute("empresas",empresas);
+		req.setAttribute("empresas",lista);
+	
 		//chama jsp
 		RequestDispatcher rd = req.getRequestDispatcher("/listaEmpresas.jsp");	
 			rd.forward(req, resp);
