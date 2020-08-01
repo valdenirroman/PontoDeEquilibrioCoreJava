@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.roman.model.Banco;
 import br.com.roman.model.Empresa;
 
 @WebServlet("/listaEmpresas")
@@ -25,7 +24,7 @@ public class ListaEmpresasServlet extends HttpServlet {
 		
 		req.setAttribute("empresas",empresas);
 		//chama jsp
-		RequestDispatcher rd = req.getRequestDispatcher("/listaEmpresas.jsp");
+		RequestDispatcher rd = req.getRequestDispatcher("/listaEmpresas.jsp");	
 			rd.forward(req, resp);
 	}
 
